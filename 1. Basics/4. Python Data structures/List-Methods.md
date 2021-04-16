@@ -41,3 +41,8 @@
 **Python List `sort()`**
 
     sorts elements of a list
+
+
+_Credits : [Programiz][Original Page]_
+
+[Original Page]: https://www.programiz.com/python-programming/methods/list
