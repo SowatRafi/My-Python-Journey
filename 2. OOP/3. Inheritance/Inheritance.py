@@ -9,3 +9,11 @@ class Person:
 
 R = Person("Sowat", "Rafi")
 R.printName()
+
+
+class Engineers(Person):
+    pass
+
+
+employee_01 = Engineers("Engr.", "Rafi")
+employee_01.printName()
