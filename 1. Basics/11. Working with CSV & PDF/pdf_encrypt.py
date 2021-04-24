@@ -17,9 +17,9 @@ def add_encryption(input_pdf, output_pdf, password):
 if __name__ == "__main__":
     try:
         add_encryption(
-            input_pdf="PDF/Merged PDF/Merged(Paper).pdf",
-            output_pdf="PDF/Merged PDF/3D_Tiled_Convolution_for_Effective_Segmentation_of_Volumetric_Medical_Images(locked).pdf",
-            password="ASA"
+            input_pdf=input("Enter your input file path...\n"),
+            output_pdf=input("Enter your output file path\n(with new file name)...\nCurrent file name will lock your current PDF.\n"),
+            password=input("Enter you password: ")
         )
 
     except Exception as e:
