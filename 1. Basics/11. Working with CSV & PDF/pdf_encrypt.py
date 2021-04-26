@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from PyPDF2 import PdfFileReader, PdfFileWriter
 
 
@@ -22,7 +23,8 @@ if __name__ == "__main__":
             password=input("Enter you password: ")
         )
 
-    except Exception as e:
-        print(e)
-    finally:
-        print("End of the program.")
+    except:
+        print("\nERROR MESSAGE:")
+        print("Nimmddaa…Gojrass thelmii..\nAardha bhos.. Kkraakvikana Bhhumle..\nMohinoojukooo…Lioohakvee…\nUnu Kaasthaa..peezzraaa..\nRoopuveeMinn.. Bahathhee\nZarathraamaa mahashmathee..\nBhreemsaa…Inknoom..Minmahakki..\nChooho..Chuunnamatasweekkdhee..\nThraaa…Ghraakshh…Hooorrr…Aarr..")
+    else:
+        print("Successfully completed.")
