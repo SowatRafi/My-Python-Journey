@@ -9,3 +9,7 @@
 **For installing Requirements**
 
 `pip install -r requirements.txt`
+
+**For Updating `pip`**
+
+`ython3 -m pip install --upgrade pip`
