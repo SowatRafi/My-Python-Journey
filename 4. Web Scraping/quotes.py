@@ -12,8 +12,6 @@ def Printing():
         author = f"- {fav_authors[0].text.strip().upper()}\n"
         print(aquote)
         print(author)
-        keyAuthor.append(author)
-        values.append(aquote)
 
 
 def SAVE_AS_TXT(quote, author):
