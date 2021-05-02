@@ -1,12 +1,12 @@
 body {
-	background: #3399ff;
+	background: #1f4a6c;
 	font-family: 'Oswald', 'Futura', sans-serif;
 }
 #wrapper {
 	margin-top: 10% !important;
 }
 #content {
-	background:#ffff99;
+	background: #05ff0d;
 	padding: 25px;
 }
 #content > h2 {
@@ -22,13 +22,13 @@ body {
 }
 .todo-completed {
 	text-decoration: line-through;
-	background: rgba(149, 165, 166, .3);
+	background: rgba(13, 83, 32, 0.3);
 }
 footer {
 	margin-top: 20px;
-	color: white;
+	color: #699742;
 }
 #add-btn {
 	background-color:green;
-	border-color:green;
+	border-color: #ffffff;
 }
