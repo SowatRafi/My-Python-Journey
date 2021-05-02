@@ -15,6 +15,8 @@ def index(request):
 @require_POST
 def addTodoItem(request):
     form = ToDoListForm(request.POST)
+    if form.is_valid():
+        new_todo = ToDoList(text=request.POST['text'])
+        new_todo.save()
 
-    print(request.POST['text'])
     return redirect('index')
