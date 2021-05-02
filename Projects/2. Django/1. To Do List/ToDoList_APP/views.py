@@ -12,11 +12,20 @@ def index(request):
     context = {'todo_items': todo_items, 'form': form}
     return render(request, "ToDoList_APP/index.html", context)
 
+
 @require_POST
 def addTodoItem(request):
     form = ToDoListForm(request.POST)
     if form.is_valid():
         new_todo = ToDoList(text=request.POST['text'])
         new_todo.save()
+
+    return redirect('index')
+
+
+def completedTodo(request, todo_id):
+    todo = ToDoList.objects.get(pk=todo_id)
+    todo.completed = True
+    todo.save()
 
     return redirect('index')

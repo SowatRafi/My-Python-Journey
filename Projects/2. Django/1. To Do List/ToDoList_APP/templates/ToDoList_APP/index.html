@@ -55,7 +55,7 @@
                             {% if todolist.completed %}
                             <li class="list-group-item todo-completed">{{ todolist.text }}</li>
                             {% else %}
-                                <a herf="#"><li class="list-group-item">{{ todolist.text }}</li></a>
+                                <a href="{% url 'completed' todolist.id %}" f="{% url 'completed' todolist.id %}"><li class="list-group-item">{{ todolist.text }}</li></a>
                             {% endif %}
 						{% endfor %}
 
