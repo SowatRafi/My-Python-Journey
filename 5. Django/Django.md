@@ -50,13 +50,13 @@ Example: `Django` or `test`. Which conflicts with built-in `python` _package_.
 ****
 **Migration Commands**
 
-`migrate` - Applies and unapplied _migrations_
+`python manage.py migrate` - Applies and unapplied _migrations_
 
-`makemigrations` - Creates new _migrations_ based on changes you make to your models.
+`python manage.py makemigrations` - Creates new _migrations_ based on changes you make to your models.
 
-`sqlmigrate` - Display the `SQL statements` for a _migration_.
+`python manage.py sqlmigrate` - Display the `SQL statements` for a _migration_.
 
-`showmigrations` - Lists a _project's_ `migrations` and _their status_.
+`python manage.py showmigrations` - Lists a _project's_ `migrations` and _their status_.
 ****
 
 **Create a Django App**
