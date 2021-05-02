@@ -8,7 +8,8 @@ from django.views.decorators.http import require_POST
 
 def index(request):
     todo_items = ToDoList.objects.order_by('id')
-    context = {'todo_items': todo_items}
+    form = ToDoListForm()
+    context = {'todo_items': todo_items, 'form': form}
     return render(request, "ToDoList_APP/index.html", context)
 
 @require_POST

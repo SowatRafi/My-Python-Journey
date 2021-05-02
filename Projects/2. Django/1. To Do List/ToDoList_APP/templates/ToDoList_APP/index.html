@@ -24,9 +24,8 @@
 					<form action="{% url 'add' %}" method="POST" role="form">
 					{% csrf_token %}
 						<div class="form-group">
-                            {{ form.text }}
 							<div class="input-group">
-							  <input type="text" class="form-control" placeholder="Enter todo" aria-label="Todo" aria-describedby="add-btn">
+                                {{ form.text }}
 							  <span class="input-group-btn">
 								  <button type="submit" class="btn btn-default" id="add-btn">ADD</button>
 							  </span>
