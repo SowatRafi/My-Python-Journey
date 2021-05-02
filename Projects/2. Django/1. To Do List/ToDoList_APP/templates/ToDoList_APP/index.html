@@ -21,11 +21,12 @@
 				<div class="col-lg-4 col-lg-offset-4" id="content">
 					<h1>What to do today </h1>
 					
-					<form action="#" method="POST" role="form">
-					
+					<form action="{% url 'add' %}" method="POST" role="form">
+					{% csrf_token %}
 						<div class="form-group">
+                            {{ form.text }}
 							<div class="input-group">
-							  <input type="text" class="form-control" placeholder="Enter todo e.g. Wash my car" aria-label="Todo" aria-describedby="add-btn">
+							  <input type="text" class="form-control" placeholder="Enter todo" aria-label="Todo" aria-describedby="add-btn">
 							  <span class="input-group-btn">
 								  <button type="submit" class="btn btn-default" id="add-btn">ADD</button>
 							  </span>
