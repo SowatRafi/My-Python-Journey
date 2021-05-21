@@ -159,3 +159,29 @@ Equivalent to:
 1. `python manage.py makemigartions`
 
 2. `python manage.py migrate`
+****
+
+
+**Database Setup**
+
+* `SQLite` is the **default database configuration** for `Django`.
+* `Django` supports _other_ database systems like:
+  1. `PostgreSQL`,
+  2. `Oracle`,
+  3. `MySQL`
+     
+
+     DATABASES = {
+      'default': {
+          'ENGINE': 'django.db.backends.postgresql',
+          # 'NAME': BASE_DIR / 'db.sqlite3',
+          'NAME': 'portfoliodb',
+          'USER': 'postgres',
+          'PASSWORD': 'password',
+          'HOST': 'Test Server',
+          'PORT': 5432,
+        }
+      }
+
+You also need to `pip3 install psycopg2`
+****
