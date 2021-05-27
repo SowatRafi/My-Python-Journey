@@ -169,7 +169,7 @@ Equivalent to:
   1. `PostgreSQL`,
   2. `Oracle`,
   3. `MySQL`
-     
+    
 
      DATABASES = {
       'default': {
