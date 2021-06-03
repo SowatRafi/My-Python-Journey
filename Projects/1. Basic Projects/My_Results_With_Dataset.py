@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 GPA = {
     'BUS101': 3.7,
     'DEV101': 2.7,

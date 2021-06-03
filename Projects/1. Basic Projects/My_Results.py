@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 total_courses = int(input("How many courses have you completed? => "))
 
 GPA = {}
